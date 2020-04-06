@@ -10,7 +10,12 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="kotlin-sandbox" target="1.5" />
+      <module name="kotlin-sandbox" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="kotlin-sandbox" options="-parameters" />
+    </option>
   </component>
 </project>
