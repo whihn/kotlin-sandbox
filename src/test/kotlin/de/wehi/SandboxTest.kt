@@ -6,14 +6,14 @@ import kotlin.test.assertEquals
 class SandboxTest {
 
     @Test
-    fun creates_class_with_default_property() {
+    fun `creates class with default property`() {
         val sandbox = Sandbox()
 
         assertEquals("defaultInput", sandbox.input)
     }
 
     @Test
-    fun adds_passed_arguments() {
+    fun `sums passed arguments`() {
         val sandbox = Sandbox()
 
         assertEquals(3, sandbox.compute(1, 2))
