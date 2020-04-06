@@ -16,8 +16,8 @@ class SandboxTest {
     fun adds_passed_arguments() {
         val sandbox = Sandbox()
 
-        val result = sandbox.compute(1, 2)
-
-        assertEquals(3, result)
+        assertEquals(3, sandbox.compute(1, 2))
+        assertEquals(6, sandbox.compute(1, 2, 3))
+        assertEquals(10, sandbox.compute(1, 2, 3, 4))
     }
 }

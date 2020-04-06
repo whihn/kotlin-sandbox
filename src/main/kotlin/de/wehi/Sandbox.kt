@@ -1,5 +1,9 @@
 package de.wehi
 
 class Sandbox(val input: String = "defaultInput") {
-    fun compute(a: Int, b: Int): Int = 3
+
+    fun compute(vararg input: Int): Int {
+        return input.sum()
+    }
+    
 }
